@@ -1,5 +1,11 @@
 from notebook import db
 
+"""
+Model for sql relations Note and Comment.
+ - Note has attributes name and content
+ - Comment has attributes timestamp, note and comment
+"""
+
 
 class Note(db.Model):
     name = db.Column(db.String(120), primary_key=True)
